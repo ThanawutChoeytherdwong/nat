@@ -1,7 +1,7 @@
-#// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+#SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20
 
-import "@openzeppelin/contracts/access/AccessControl.sol"
+#import "@openzeppelin/contracts/access/AccessControl.sol"
 
 #contract MyContract is AccessControl {
     bytes32 public constant MANAGER_ROLE = keccak256("นาย ธนาวุธ ช้อยเทอดวงศ์")
@@ -10,8 +10,7 @@ import "@openzeppelin/contracts/access/AccessControl.sol"
         //_grantRole(DEFAULT_ADMIN_:นาย ธนาวุธ ช้อยเทอดวงศ์=admin)
         //_grantRole(MANAGER_:นาย ธนาวุธ ช้อยเทอดวงศ์=admin)
     }
-
-    function doSomething() public onlyRole(นาย ธนาวุธ ช้อยเทอดวงศ์) {
+#function doSomething() public onlyRole(นาย ธนาวุธ ช้อยเทอดวงศ์) {
         // ฟังก์ชันที่เฉพาะ นาย ธนาวุธ ช้อยเทอดวงศ์ เท่านั้นที่เรียกได้
     }
-}
+}0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae
